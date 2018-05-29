@@ -10,14 +10,15 @@ namespace ProgramaAurora
     {
         Dado dado = new Dado();
 
-        private void ordenarDado()
+        private Dado ordenarDado(Dado dado)
         {
             Array.Sort(dado.Faces);
+            return dado;
         }
 
 	    public int uns(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int unsPontos = 0;            
 
             foreach (var face in dado.Faces)
@@ -33,7 +34,7 @@ namespace ProgramaAurora
 
         public int dois(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int doisPontos = 0;
 
             foreach (var face in dado.Faces)
@@ -49,7 +50,7 @@ namespace ProgramaAurora
 
         public int três(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int tresPontos = 0;
 
             foreach (var face in dado.Faces)
@@ -62,10 +63,10 @@ namespace ProgramaAurora
             return tresPontos;
         }
 
-
+       
         public int quatro(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int quatroPontos = 0;
 
             foreach (var face in dado.Faces)
@@ -81,7 +82,7 @@ namespace ProgramaAurora
 
         public int cinco(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int cincoPontos = 0;
 
             foreach (var face in dado.Faces)
@@ -97,7 +98,7 @@ namespace ProgramaAurora
 
         public int seis(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int seisPontos = 0;
 
             foreach (var face in dado.Faces)
@@ -113,7 +114,7 @@ namespace ProgramaAurora
 
         public int par(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
 
             int parPontos = 0;
 
@@ -131,7 +132,7 @@ namespace ProgramaAurora
 
         public int doisPares(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int doisParesPontos = 0;
 
             var contandoOsPares = dado.Faces
@@ -149,7 +150,7 @@ namespace ProgramaAurora
 
         public int trio(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int trioPontos = 0;
             foreach (var face in dado.Faces)
             {
@@ -164,7 +165,7 @@ namespace ProgramaAurora
 
         public int quadra(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int quadraPontos = 0;
             foreach (var face in dado.Faces)
             {
@@ -179,7 +180,7 @@ namespace ProgramaAurora
 
         public int sequenciaMenor(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int sequenciaMenorPontos = 0;
             foreach (var face in dado.Faces)
             {
@@ -194,7 +195,7 @@ namespace ProgramaAurora
 
         public int sequenciaMaior(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int sequenciaMaiorPontos = 0;
             foreach (var face in dado.Faces)
             {
@@ -209,7 +210,7 @@ namespace ProgramaAurora
 
         public int fullHouse(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int fullHousePontos = 0;
             foreach (var face in dado.Faces)
             {
@@ -224,7 +225,7 @@ namespace ProgramaAurora
 
         public int aurora(Dado dado)
         {
-            ordenarDado();
+            ordenarDado(dado);
             int auroraPontos = 0;
             Boolean iguais = false;
 
