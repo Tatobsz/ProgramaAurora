@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace ProgramaAurora
 {
     public partial class FormJogarDado : Form
-    {
+    {/*
         public FormJogarDado()
         {
             InitializeComponent();
@@ -197,6 +197,6 @@ namespace ProgramaAurora
                     }
                 }
             }
-        }
+        }*/
     }
 }

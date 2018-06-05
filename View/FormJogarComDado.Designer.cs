@@ -102,7 +102,7 @@
             this.btnVerificar.Size = new System.Drawing.Size(58, 57);
             this.btnVerificar.TabIndex = 13;
             this.btnVerificar.UseVisualStyleBackColor = false;
-            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
+            //this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // txtDado5
             // 
