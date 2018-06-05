@@ -73,9 +73,7 @@ namespace ProgramaAurora
                 btnIniciarJogo.Visible = false;
                 splitContainer2.Visible = true;
             }
-        }
-
-        bool rodada = true;
+        }        
 
         private void btnVerificar_Click_1(object sender, EventArgs e)
         {
@@ -105,131 +103,145 @@ namespace ProgramaAurora
         }
 
         private void btnSalvarCategoria_Click(object sender, EventArgs e)
-        {
+        {            
             if (rbAurora.Checked)
-            {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
-                jogador1.Pontos += pontosDaRodada;
-                string pontuou = "Você marcou {0} pontos nesta rodada";
-                pontuou = string.Format(pontuou, pontosDaRodada.ToString());
-                MessageBox.Show(pontuou);
-            }
-
-            else if (rbFullHouse.Checked)
             {
                 int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(1, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbFullHouse.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(2, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbSequenciaMaior.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(3, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbSequenciaMenor.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(4, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbQuadra.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(5, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbTrio.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(6, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbDoisPares.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(7, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbPar.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(8, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbSeis.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(9, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbCinco.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(10, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbQuatro.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(11, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbTres.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(12, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
 
-            else if (rbAurora.Checked)
+            else if (rbDois.Checked)
             {
-                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(0, valoresDoDado);
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(13, valoresDoDado);
                 jogador1.Pontos += pontosDaRodada;
                 string pontuou = "Você marcou {0} pontos nesta rodada";
                 pontuou = string.Format(pontuou, pontosDaRodada.ToString());
                 MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
+            }
+
+            else if (rbUns.Checked)
+            {
+                int pontosDaRodada = categoriaSelecionada.categoriaSelecionada(14, valoresDoDado);
+                jogador1.Pontos += pontosDaRodada;
+                string pontuou = "Você marcou {0} pontos nesta rodada";
+                pontuou = string.Format(pontuou, pontosDaRodada.ToString());
+                MessageBox.Show(pontuou);
+                lblPontosJogador1.Text = "Pontos: " + jogador1.Pontos.ToString();
             }
         }
     }

@@ -33,89 +33,88 @@ namespace ProgramaAurora.Model
                 return categoriaAurora.Pontos;
             }
 
-            if (comboBox1 == 2)
+            else if (comboBox1 == 2)
             {
                 categoriaFullHouse.calcularPontos(valoresDoDado);
                 return categoriaFullHouse.Pontos;
             }
 
-            if (comboBox1 == 3)
+            else if (comboBox1 == 3)
             {
                 categoriaSequenciaMaior.calcularPontos(valoresDoDado);
                 return categoriaSequenciaMaior.Pontos;
             }
 
-            if (comboBox1 == 4)
+            else if (comboBox1 == 4)
             {
                 categoriaSequenciaMenor.calcularPontos(valoresDoDado);
                 return categoriaSequenciaMenor.Pontos;
             }
 
 
-            if (comboBox1 == 5)
+            else if (comboBox1 == 5)
             {
                 categoriaQuadra.calcularPontos(valoresDoDado);
                 return categoriaQuadra.Pontos;
             }
 
 
-            if (comboBox1 == 6)
+            else if (comboBox1 == 6)
             {
                 categoriaTrio.calcularPontos(valoresDoDado);
                 return categoriaTrio.Pontos;
             }
 
 
-            if (comboBox1 == 7)
+            else if (comboBox1 == 7)
             {
                 categoriaDoisPares.calcularPontos(valoresDoDado, categoriaPar.calcularPontos(valoresDoDado));
                 return categoriaDoisPares.Pontos;
             }
 
 
-            if (comboBox1 == 8)
+            else if (comboBox1 == 8)
             {
                 categoriaPar.calcularPontos(valoresDoDado);
                 return categoriaPar.Pontos;
             }
 
 
-            if (comboBox1 == 9)
+            else if (comboBox1 == 9)
             {
                 categoriaSeis.calcularPontos(valoresDoDado);
                 return categoriaSeis.Pontos;
             }
 
 
-            if (comboBox1 == 10)
+            else if (comboBox1 == 10)
             {
                 categoriaCinco.calcularPontos(valoresDoDado);
                 return categoriaCinco.Pontos;
             }
 
 
-            if (comboBox1 == 11)
+            else if (comboBox1 == 11)
             {
                 categoriaQuatro.calcularPontos(valoresDoDado);
                 return categoriaQuatro.Pontos;
             }
 
 
-            if (comboBox1 == 12)
+            else if (comboBox1 == 12)
             {
                 categoriaTres.calcularPontos(valoresDoDado);
                 return categoriaTres.Pontos;
             }
 
 
-            if (comboBox1 == 13)
+            else if (comboBox1 == 13)
             {
                 categoriaDois.calcularPontos(valoresDoDado);
                 return categoriaDois.Pontos;
             }
 
-
-            if (comboBox1 == 14)
+            else if (comboBox1 == 14)
             {
                 categoriaUns.calcularPontos(valoresDoDado);
                 return categoriaUns.Pontos;

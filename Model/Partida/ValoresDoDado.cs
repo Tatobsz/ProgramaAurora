@@ -14,10 +14,14 @@ namespace ProgramaAurora.Model
         {
             int[] aux = new int[5];
             
-            aux[0] = Dado1.JogarDados();            
+            aux[0] = Dado1.JogarDados();
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(0.2));
             aux[1] = Dado2.JogarDados();
-            aux[2] = Dado3.JogarDados();            
-            aux[3] = Dado4.JogarDados();            
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(0.2));
+            aux[2] = Dado3.JogarDados();
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(0.2));
+            aux[3] = Dado4.JogarDados();
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(0.2));
             aux[4] = Dado5.JogarDados();
 
             ValorDados[0] = aux[0];
