@@ -45,22 +45,24 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVerificar = new System.Windows.Forms.Button();
             this.lblJogo = new System.Windows.Forms.Label();
-            this.lblSelecionarResposta = new System.Windows.Forms.Label();
-            this.btnSalvarCategoria = new System.Windows.Forms.Button();
-            this.rbAurora = new System.Windows.Forms.RadioButton();
-            this.rbTrio = new System.Windows.Forms.RadioButton();
-            this.rbFullHouse = new System.Windows.Forms.RadioButton();
-            this.rbSequenciaMaior = new System.Windows.Forms.RadioButton();
-            this.rbSequenciaMenor = new System.Windows.Forms.RadioButton();
-            this.rbDoisPares = new System.Windows.Forms.RadioButton();
-            this.rbPar = new System.Windows.Forms.RadioButton();
-            this.rbSeis = new System.Windows.Forms.RadioButton();
-            this.rbQuatro = new System.Windows.Forms.RadioButton();
-            this.rbTres = new System.Windows.Forms.RadioButton();
-            this.rbDois = new System.Windows.Forms.RadioButton();
-            this.rbUns = new System.Windows.Forms.RadioButton();
-            this.rbQuadra = new System.Windows.Forms.RadioButton();
+            this.pnlSelecao = new System.Windows.Forms.Panel();
             this.rbCinco = new System.Windows.Forms.RadioButton();
+            this.rbQuadra = new System.Windows.Forms.RadioButton();
+            this.rbUns = new System.Windows.Forms.RadioButton();
+            this.rbDois = new System.Windows.Forms.RadioButton();
+            this.rbTres = new System.Windows.Forms.RadioButton();
+            this.rbQuatro = new System.Windows.Forms.RadioButton();
+            this.rbSeis = new System.Windows.Forms.RadioButton();
+            this.rbPar = new System.Windows.Forms.RadioButton();
+            this.rbDoisPares = new System.Windows.Forms.RadioButton();
+            this.rbSequenciaMenor = new System.Windows.Forms.RadioButton();
+            this.rbSequenciaMaior = new System.Windows.Forms.RadioButton();
+            this.rbFullHouse = new System.Windows.Forms.RadioButton();
+            this.rbTrio = new System.Windows.Forms.RadioButton();
+            this.rbAurora = new System.Windows.Forms.RadioButton();
+            this.btnSalvarCategoria = new System.Windows.Forms.Button();
+            this.lblSelecionarResposta = new System.Windows.Forms.Label();
+            this.lblVezDoJogador = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -74,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlSelecao.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -192,6 +195,7 @@
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.Controls.Add(this.lblVezDoJogador);
             this.splitContainer2.Panel1.Controls.Add(this.pictureBox3);
             this.splitContainer2.Panel1.Controls.Add(this.pictureBox2);
             this.splitContainer2.Panel1.Controls.Add(this.pictureBox5);
@@ -202,22 +206,7 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.rbCinco);
-            this.splitContainer2.Panel2.Controls.Add(this.rbQuadra);
-            this.splitContainer2.Panel2.Controls.Add(this.rbUns);
-            this.splitContainer2.Panel2.Controls.Add(this.rbDois);
-            this.splitContainer2.Panel2.Controls.Add(this.rbTres);
-            this.splitContainer2.Panel2.Controls.Add(this.rbQuatro);
-            this.splitContainer2.Panel2.Controls.Add(this.rbSeis);
-            this.splitContainer2.Panel2.Controls.Add(this.rbPar);
-            this.splitContainer2.Panel2.Controls.Add(this.rbDoisPares);
-            this.splitContainer2.Panel2.Controls.Add(this.rbSequenciaMenor);
-            this.splitContainer2.Panel2.Controls.Add(this.rbSequenciaMaior);
-            this.splitContainer2.Panel2.Controls.Add(this.rbFullHouse);
-            this.splitContainer2.Panel2.Controls.Add(this.rbTrio);
-            this.splitContainer2.Panel2.Controls.Add(this.rbAurora);
-            this.splitContainer2.Panel2.Controls.Add(this.btnSalvarCategoria);
-            this.splitContainer2.Panel2.Controls.Add(this.lblSelecionarResposta);
+            this.splitContainer2.Panel2.Controls.Add(this.pnlSelecao);
             this.splitContainer2.Size = new System.Drawing.Size(309, 491);
             this.splitContainer2.SplitterDistance = 240;
             this.splitContainer2.TabIndex = 0;
@@ -301,18 +290,184 @@
             this.lblJogo.Text = "Rodar Dados";
             this.lblJogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSelecionarResposta
+            // pnlSelecao
             // 
-            this.lblSelecionarResposta.AutoSize = true;
-            this.lblSelecionarResposta.BackColor = System.Drawing.Color.Green;
-            this.lblSelecionarResposta.CausesValidation = false;
-            this.lblSelecionarResposta.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelecionarResposta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblSelecionarResposta.Location = new System.Drawing.Point(24, 21);
-            this.lblSelecionarResposta.Name = "lblSelecionarResposta";
-            this.lblSelecionarResposta.Size = new System.Drawing.Size(261, 23);
-            this.lblSelecionarResposta.TabIndex = 2;
-            this.lblSelecionarResposta.Text = "Selecione uma categoria";
+            this.pnlSelecao.Controls.Add(this.rbCinco);
+            this.pnlSelecao.Controls.Add(this.rbQuadra);
+            this.pnlSelecao.Controls.Add(this.rbUns);
+            this.pnlSelecao.Controls.Add(this.rbDois);
+            this.pnlSelecao.Controls.Add(this.rbTres);
+            this.pnlSelecao.Controls.Add(this.rbQuatro);
+            this.pnlSelecao.Controls.Add(this.rbSeis);
+            this.pnlSelecao.Controls.Add(this.rbPar);
+            this.pnlSelecao.Controls.Add(this.rbDoisPares);
+            this.pnlSelecao.Controls.Add(this.rbSequenciaMenor);
+            this.pnlSelecao.Controls.Add(this.rbSequenciaMaior);
+            this.pnlSelecao.Controls.Add(this.rbFullHouse);
+            this.pnlSelecao.Controls.Add(this.rbTrio);
+            this.pnlSelecao.Controls.Add(this.rbAurora);
+            this.pnlSelecao.Controls.Add(this.btnSalvarCategoria);
+            this.pnlSelecao.Controls.Add(this.lblSelecionarResposta);
+            this.pnlSelecao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSelecao.Location = new System.Drawing.Point(0, 0);
+            this.pnlSelecao.Name = "pnlSelecao";
+            this.pnlSelecao.Size = new System.Drawing.Size(305, 243);
+            this.pnlSelecao.TabIndex = 37;
+            this.pnlSelecao.Visible = false;
+            // 
+            // rbCinco
+            // 
+            this.rbCinco.AutoSize = true;
+            this.rbCinco.Location = new System.Drawing.Point(133, 148);
+            this.rbCinco.Name = "rbCinco";
+            this.rbCinco.Size = new System.Drawing.Size(52, 17);
+            this.rbCinco.TabIndex = 52;
+            this.rbCinco.TabStop = true;
+            this.rbCinco.Text = "Cinco";
+            this.rbCinco.UseVisualStyleBackColor = true;
+            // 
+            // rbQuadra
+            // 
+            this.rbQuadra.AutoSize = true;
+            this.rbQuadra.Location = new System.Drawing.Point(26, 148);
+            this.rbQuadra.Name = "rbQuadra";
+            this.rbQuadra.Size = new System.Drawing.Size(60, 17);
+            this.rbQuadra.TabIndex = 51;
+            this.rbQuadra.TabStop = true;
+            this.rbQuadra.Text = "Quadra";
+            this.rbQuadra.UseVisualStyleBackColor = true;
+            // 
+            // rbUns
+            // 
+            this.rbUns.AutoSize = true;
+            this.rbUns.Location = new System.Drawing.Point(224, 125);
+            this.rbUns.Name = "rbUns";
+            this.rbUns.Size = new System.Drawing.Size(44, 17);
+            this.rbUns.TabIndex = 50;
+            this.rbUns.TabStop = true;
+            this.rbUns.Text = "Uns";
+            this.rbUns.UseVisualStyleBackColor = true;
+            // 
+            // rbDois
+            // 
+            this.rbDois.AutoSize = true;
+            this.rbDois.Location = new System.Drawing.Point(224, 102);
+            this.rbDois.Name = "rbDois";
+            this.rbDois.Size = new System.Drawing.Size(46, 17);
+            this.rbDois.TabIndex = 49;
+            this.rbDois.TabStop = true;
+            this.rbDois.Text = "Dois";
+            this.rbDois.UseVisualStyleBackColor = true;
+            // 
+            // rbTres
+            // 
+            this.rbTres.AutoSize = true;
+            this.rbTres.Location = new System.Drawing.Point(224, 79);
+            this.rbTres.Name = "rbTres";
+            this.rbTres.Size = new System.Drawing.Size(46, 17);
+            this.rbTres.TabIndex = 48;
+            this.rbTres.TabStop = true;
+            this.rbTres.Text = "Tres";
+            this.rbTres.UseVisualStyleBackColor = true;
+            // 
+            // rbQuatro
+            // 
+            this.rbQuatro.AutoSize = true;
+            this.rbQuatro.Location = new System.Drawing.Point(224, 56);
+            this.rbQuatro.Name = "rbQuatro";
+            this.rbQuatro.Size = new System.Drawing.Size(57, 17);
+            this.rbQuatro.TabIndex = 47;
+            this.rbQuatro.TabStop = true;
+            this.rbQuatro.Text = "Quatro";
+            this.rbQuatro.UseVisualStyleBackColor = true;
+            // 
+            // rbSeis
+            // 
+            this.rbSeis.AutoSize = true;
+            this.rbSeis.Location = new System.Drawing.Point(133, 125);
+            this.rbSeis.Name = "rbSeis";
+            this.rbSeis.Size = new System.Drawing.Size(45, 17);
+            this.rbSeis.TabIndex = 46;
+            this.rbSeis.TabStop = true;
+            this.rbSeis.Text = "Seis";
+            this.rbSeis.UseVisualStyleBackColor = true;
+            // 
+            // rbPar
+            // 
+            this.rbPar.AutoSize = true;
+            this.rbPar.Location = new System.Drawing.Point(133, 102);
+            this.rbPar.Name = "rbPar";
+            this.rbPar.Size = new System.Drawing.Size(41, 17);
+            this.rbPar.TabIndex = 45;
+            this.rbPar.TabStop = true;
+            this.rbPar.Text = "Par";
+            this.rbPar.UseVisualStyleBackColor = true;
+            // 
+            // rbDoisPares
+            // 
+            this.rbDoisPares.AutoSize = true;
+            this.rbDoisPares.Location = new System.Drawing.Point(133, 79);
+            this.rbDoisPares.Name = "rbDoisPares";
+            this.rbDoisPares.Size = new System.Drawing.Size(73, 17);
+            this.rbDoisPares.TabIndex = 44;
+            this.rbDoisPares.TabStop = true;
+            this.rbDoisPares.Text = "DoisPares";
+            this.rbDoisPares.UseVisualStyleBackColor = true;
+            // 
+            // rbSequenciaMenor
+            // 
+            this.rbSequenciaMenor.AutoSize = true;
+            this.rbSequenciaMenor.Location = new System.Drawing.Point(26, 125);
+            this.rbSequenciaMenor.Name = "rbSequenciaMenor";
+            this.rbSequenciaMenor.Size = new System.Drawing.Size(106, 17);
+            this.rbSequenciaMenor.TabIndex = 43;
+            this.rbSequenciaMenor.TabStop = true;
+            this.rbSequenciaMenor.Text = "SequenciaMenor";
+            this.rbSequenciaMenor.UseVisualStyleBackColor = true;
+            // 
+            // rbSequenciaMaior
+            // 
+            this.rbSequenciaMaior.AutoSize = true;
+            this.rbSequenciaMaior.Location = new System.Drawing.Point(26, 102);
+            this.rbSequenciaMaior.Name = "rbSequenciaMaior";
+            this.rbSequenciaMaior.Size = new System.Drawing.Size(104, 17);
+            this.rbSequenciaMaior.TabIndex = 42;
+            this.rbSequenciaMaior.TabStop = true;
+            this.rbSequenciaMaior.Text = "Sequencia maior";
+            this.rbSequenciaMaior.UseVisualStyleBackColor = true;
+            // 
+            // rbFullHouse
+            // 
+            this.rbFullHouse.AutoSize = true;
+            this.rbFullHouse.Location = new System.Drawing.Point(26, 79);
+            this.rbFullHouse.Name = "rbFullHouse";
+            this.rbFullHouse.Size = new System.Drawing.Size(72, 17);
+            this.rbFullHouse.TabIndex = 41;
+            this.rbFullHouse.TabStop = true;
+            this.rbFullHouse.Text = "FullHouse";
+            this.rbFullHouse.UseVisualStyleBackColor = true;
+            // 
+            // rbTrio
+            // 
+            this.rbTrio.AutoSize = true;
+            this.rbTrio.Location = new System.Drawing.Point(133, 56);
+            this.rbTrio.Name = "rbTrio";
+            this.rbTrio.Size = new System.Drawing.Size(43, 17);
+            this.rbTrio.TabIndex = 40;
+            this.rbTrio.TabStop = true;
+            this.rbTrio.Text = "Trio";
+            this.rbTrio.UseVisualStyleBackColor = true;
+            // 
+            // rbAurora
+            // 
+            this.rbAurora.AutoSize = true;
+            this.rbAurora.Location = new System.Drawing.Point(26, 56);
+            this.rbAurora.Name = "rbAurora";
+            this.rbAurora.Size = new System.Drawing.Size(56, 17);
+            this.rbAurora.TabIndex = 39;
+            this.rbAurora.TabStop = true;
+            this.rbAurora.Text = "Aurora";
+            this.rbAurora.UseVisualStyleBackColor = true;
             // 
             // btnSalvarCategoria
             // 
@@ -320,166 +475,37 @@
             this.btnSalvarCategoria.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalvarCategoria.BackgroundImage")));
             this.btnSalvarCategoria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalvarCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalvarCategoria.Location = new System.Drawing.Point(28, 171);
+            this.btnSalvarCategoria.Location = new System.Drawing.Point(26, 171);
             this.btnSalvarCategoria.Name = "btnSalvarCategoria";
             this.btnSalvarCategoria.Size = new System.Drawing.Size(50, 50);
-            this.btnSalvarCategoria.TabIndex = 22;
+            this.btnSalvarCategoria.TabIndex = 38;
             this.btnSalvarCategoria.UseVisualStyleBackColor = false;
-            this.btnSalvarCategoria.Click += new System.EventHandler(this.btnSalvarCategoria_Click);
+            this.btnSalvarCategoria.Click += new System.EventHandler(this.btnSalvarCategoria_Click_1);
             // 
-            // rbAurora
+            // lblSelecionarResposta
             // 
-            this.rbAurora.AutoSize = true;
-            this.rbAurora.Location = new System.Drawing.Point(28, 56);
-            this.rbAurora.Name = "rbAurora";
-            this.rbAurora.Size = new System.Drawing.Size(56, 17);
-            this.rbAurora.TabIndex = 23;
-            this.rbAurora.TabStop = true;
-            this.rbAurora.Text = "Aurora";
-            this.rbAurora.UseVisualStyleBackColor = true;
+            this.lblSelecionarResposta.AutoSize = true;
+            this.lblSelecionarResposta.BackColor = System.Drawing.Color.Green;
+            this.lblSelecionarResposta.CausesValidation = false;
+            this.lblSelecionarResposta.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelecionarResposta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblSelecionarResposta.Location = new System.Drawing.Point(22, 21);
+            this.lblSelecionarResposta.Name = "lblSelecionarResposta";
+            this.lblSelecionarResposta.Size = new System.Drawing.Size(261, 23);
+            this.lblSelecionarResposta.TabIndex = 37;
+            this.lblSelecionarResposta.Text = "Selecione uma categoria";
             // 
-            // rbTrio
+            // lblVezDoJogador
             // 
-            this.rbTrio.AutoSize = true;
-            this.rbTrio.Location = new System.Drawing.Point(135, 56);
-            this.rbTrio.Name = "rbTrio";
-            this.rbTrio.Size = new System.Drawing.Size(43, 17);
-            this.rbTrio.TabIndex = 24;
-            this.rbTrio.TabStop = true;
-            this.rbTrio.Text = "Trio";
-            this.rbTrio.UseVisualStyleBackColor = true;
-            // 
-            // rbFullHouse
-            // 
-            this.rbFullHouse.AutoSize = true;
-            this.rbFullHouse.Location = new System.Drawing.Point(28, 79);
-            this.rbFullHouse.Name = "rbFullHouse";
-            this.rbFullHouse.Size = new System.Drawing.Size(72, 17);
-            this.rbFullHouse.TabIndex = 25;
-            this.rbFullHouse.TabStop = true;
-            this.rbFullHouse.Text = "FullHouse";
-            this.rbFullHouse.UseVisualStyleBackColor = true;
-            // 
-            // rbSequenciaMaior
-            // 
-            this.rbSequenciaMaior.AutoSize = true;
-            this.rbSequenciaMaior.Location = new System.Drawing.Point(28, 102);
-            this.rbSequenciaMaior.Name = "rbSequenciaMaior";
-            this.rbSequenciaMaior.Size = new System.Drawing.Size(104, 17);
-            this.rbSequenciaMaior.TabIndex = 26;
-            this.rbSequenciaMaior.TabStop = true;
-            this.rbSequenciaMaior.Text = "Sequencia maior";
-            this.rbSequenciaMaior.UseVisualStyleBackColor = true;
-            // 
-            // rbSequenciaMenor
-            // 
-            this.rbSequenciaMenor.AutoSize = true;
-            this.rbSequenciaMenor.Location = new System.Drawing.Point(28, 125);
-            this.rbSequenciaMenor.Name = "rbSequenciaMenor";
-            this.rbSequenciaMenor.Size = new System.Drawing.Size(106, 17);
-            this.rbSequenciaMenor.TabIndex = 27;
-            this.rbSequenciaMenor.TabStop = true;
-            this.rbSequenciaMenor.Text = "SequenciaMenor";
-            this.rbSequenciaMenor.UseVisualStyleBackColor = true;
-            // 
-            // rbDoisPares
-            // 
-            this.rbDoisPares.AutoSize = true;
-            this.rbDoisPares.Location = new System.Drawing.Point(135, 79);
-            this.rbDoisPares.Name = "rbDoisPares";
-            this.rbDoisPares.Size = new System.Drawing.Size(73, 17);
-            this.rbDoisPares.TabIndex = 28;
-            this.rbDoisPares.TabStop = true;
-            this.rbDoisPares.Text = "DoisPares";
-            this.rbDoisPares.UseVisualStyleBackColor = true;
-            // 
-            // rbPar
-            // 
-            this.rbPar.AutoSize = true;
-            this.rbPar.Location = new System.Drawing.Point(135, 102);
-            this.rbPar.Name = "rbPar";
-            this.rbPar.Size = new System.Drawing.Size(41, 17);
-            this.rbPar.TabIndex = 29;
-            this.rbPar.TabStop = true;
-            this.rbPar.Text = "Par";
-            this.rbPar.UseVisualStyleBackColor = true;
-            // 
-            // rbSeis
-            // 
-            this.rbSeis.AutoSize = true;
-            this.rbSeis.Location = new System.Drawing.Point(135, 125);
-            this.rbSeis.Name = "rbSeis";
-            this.rbSeis.Size = new System.Drawing.Size(45, 17);
-            this.rbSeis.TabIndex = 30;
-            this.rbSeis.TabStop = true;
-            this.rbSeis.Text = "Seis";
-            this.rbSeis.UseVisualStyleBackColor = true;
-            // 
-            // rbQuatro
-            // 
-            this.rbQuatro.AutoSize = true;
-            this.rbQuatro.Location = new System.Drawing.Point(226, 56);
-            this.rbQuatro.Name = "rbQuatro";
-            this.rbQuatro.Size = new System.Drawing.Size(57, 17);
-            this.rbQuatro.TabIndex = 31;
-            this.rbQuatro.TabStop = true;
-            this.rbQuatro.Text = "Quatro";
-            this.rbQuatro.UseVisualStyleBackColor = true;
-            // 
-            // rbTres
-            // 
-            this.rbTres.AutoSize = true;
-            this.rbTres.Location = new System.Drawing.Point(226, 79);
-            this.rbTres.Name = "rbTres";
-            this.rbTres.Size = new System.Drawing.Size(46, 17);
-            this.rbTres.TabIndex = 32;
-            this.rbTres.TabStop = true;
-            this.rbTres.Text = "Tres";
-            this.rbTres.UseVisualStyleBackColor = true;
-            // 
-            // rbDois
-            // 
-            this.rbDois.AutoSize = true;
-            this.rbDois.Location = new System.Drawing.Point(226, 102);
-            this.rbDois.Name = "rbDois";
-            this.rbDois.Size = new System.Drawing.Size(46, 17);
-            this.rbDois.TabIndex = 33;
-            this.rbDois.TabStop = true;
-            this.rbDois.Text = "Dois";
-            this.rbDois.UseVisualStyleBackColor = true;
-            // 
-            // rbUns
-            // 
-            this.rbUns.AutoSize = true;
-            this.rbUns.Location = new System.Drawing.Point(226, 125);
-            this.rbUns.Name = "rbUns";
-            this.rbUns.Size = new System.Drawing.Size(44, 17);
-            this.rbUns.TabIndex = 34;
-            this.rbUns.TabStop = true;
-            this.rbUns.Text = "Uns";
-            this.rbUns.UseVisualStyleBackColor = true;
-            // 
-            // rbQuadra
-            // 
-            this.rbQuadra.AutoSize = true;
-            this.rbQuadra.Location = new System.Drawing.Point(28, 148);
-            this.rbQuadra.Name = "rbQuadra";
-            this.rbQuadra.Size = new System.Drawing.Size(60, 17);
-            this.rbQuadra.TabIndex = 35;
-            this.rbQuadra.TabStop = true;
-            this.rbQuadra.Text = "Quadra";
-            this.rbQuadra.UseVisualStyleBackColor = true;
-            // 
-            // rbCinco
-            // 
-            this.rbCinco.AutoSize = true;
-            this.rbCinco.Location = new System.Drawing.Point(135, 148);
-            this.rbCinco.Name = "rbCinco";
-            this.rbCinco.Size = new System.Drawing.Size(52, 17);
-            this.rbCinco.TabIndex = 36;
-            this.rbCinco.TabStop = true;
-            this.rbCinco.Text = "Cinco";
-            this.rbCinco.UseVisualStyleBackColor = true;
+            this.lblVezDoJogador.AutoSize = true;
+            this.lblVezDoJogador.BackColor = System.Drawing.Color.Green;
+            this.lblVezDoJogador.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVezDoJogador.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblVezDoJogador.Location = new System.Drawing.Point(72, 100);
+            this.lblVezDoJogador.Name = "lblVezDoJogador";
+            this.lblVezDoJogador.Size = new System.Drawing.Size(162, 23);
+            this.lblVezDoJogador.TabIndex = 24;
+            this.lblVezDoJogador.Text = "VezDoJogador";
             // 
             // FormJogarComMaquina
             // 
@@ -502,8 +528,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
-            this.splitContainer2.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -511,6 +537,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlSelecao.ResumeLayout(false);
+            this.pnlSelecao.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -533,8 +561,7 @@
         private System.Windows.Forms.Label lblJogo;
         private System.Windows.Forms.Label lblPontosJogador2;
         private System.Windows.Forms.Label lblPontosJogador1;
-        private System.Windows.Forms.Label lblSelecionarResposta;
-        private System.Windows.Forms.Button btnSalvarCategoria;
+        private System.Windows.Forms.Panel pnlSelecao;
         private System.Windows.Forms.RadioButton rbCinco;
         private System.Windows.Forms.RadioButton rbQuadra;
         private System.Windows.Forms.RadioButton rbUns;
@@ -549,5 +576,8 @@
         private System.Windows.Forms.RadioButton rbFullHouse;
         private System.Windows.Forms.RadioButton rbTrio;
         private System.Windows.Forms.RadioButton rbAurora;
+        private System.Windows.Forms.Button btnSalvarCategoria;
+        private System.Windows.Forms.Label lblSelecionarResposta;
+        private System.Windows.Forms.Label lblVezDoJogador;
     }
 }
